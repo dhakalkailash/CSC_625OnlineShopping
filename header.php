@@ -1,9 +1,14 @@
+<?php
+    // require functions.php file
+    require ('functions.php');
+    ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Shooping</title>
+    <title>Home</title>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -17,12 +22,6 @@
 
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="style.css">
-    
-    <?php
-    // require functions.php file
-    require ('functions.php');
-    ?>
-
 </head>
 <body>
 
@@ -31,8 +30,7 @@
             <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
                 <p class="font-rale font-size-12 text-black-50 m-0">One University Palace, Shreveport, Louisiana 71115  (318) 930-5255</p>
                 <div class="font-rale font-size-14">
-                    <a href="#" class="px-3 border-right border-left text-dark">Login</a>
-                    <a href="#" class="px-3 border-right text-dark">Whishlist (0)</a>
+                    <a href="#" class="px-3 border-right border-left text-dark">Login</a>                    
                 </div>
             </div>
 
@@ -45,33 +43,26 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav m-auto font-rubik">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">On Sale</a>
+                      <a class="nav-link" href="index.php">Home</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Category</a>
+                    <li class="nav-item active">
+                      <a class="nav-link" href="Product.php">Product Details</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="Product.php">Products <i class="fas fa-chevron-down"></i></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.php">Category <i class="fas fa-chevron-down"></i></a>
-                      </li>
-                      <li class="nav-item">
+                      <li class="nav-item ">
                         <a class="nav-link" href="#">Coming Soon</a>
                       </li>
                   </ul>
-                  <form action="#" class="font-size-14 font-rale">
-                      <a href="cart.php" class="py-2 rounded-pill color-primary-bg">
-                        <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
-                        <span class="px-3 py-2 rounded-pill text-dark bg-light"><?php echo count($product->getData('cart'));?></span>
-                                          
-                      </a>
-                  </form>
+              <form action="#" class="font-size-14 font-rale">
+                <a href="cart.php" class="py-2 rounded-pill color-primary-bg">
+                    <span class="font-size-16 px-2 text-white"><i class="fas fa-shopping-cart"></i></span>
+                    <span class="px-3 py-2 rounded-pill text-dark bg-light"><?php echo count($product->getData('cart'));?></span>
+                </a>
+              </form>
                 </div>
-              </nav>
+            </nav>
                <!-- !Primary Navigation -->
 
-        </header>
+         </header>
     <!-- !End #header -->
 
     <!-- start #main-site -->
