@@ -7,13 +7,13 @@
             <div class="row">
               <div class="col-lg-3 col-12">
                 <h4 class="font-rubik font-size-20">All in One</h4>
-                <p class="font-size-14 font-rale text-white-50">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus, deserunt.</p>
+                <p class="font-size-14 font-rale text-white-50">All in One marketing is the component of digital marketing that utilizes internet and online based digital technologies such as desktop computers, mobile phones and other digital media and platforms to promote products and services.</p>
               </div>
               
               <div class="col-lg-2 col-12">
                 <h4 class="font-rubik font-size-20">Account</h4>
                 <div class="d-flex flex-column flex-wrap">
-                  <a href="#" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
+                  <a href="./Registration/login.php" class="font-rale font-size-14 text-white-50 pb-1">My Account</a>
                   <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Order History</a>
                   <a href="#" class="font-rale font-size-14 text-white-50 pb-1">Wish List</a>
                   

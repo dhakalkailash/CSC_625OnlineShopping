@@ -41,7 +41,7 @@
                                 <span><i class="fas fa-star"></i></span>
                                 <span><i class="far fa-star"></i></span>
                             </div>
-                            <a href="#" class="px-2 font-rale font-size-14">20,534 ratings</a>
+                            <a href="#" class="px-2 font-rale font-size-14">4.8/ 5 ratings</a>
                         </div>
                         <!--  !product rating-->
 
@@ -58,10 +58,10 @@
                                 <button type="submit" name="delete-cart-submit" class="btn font-baloo text-danger px-3 border-right">Delete</button>
                             </form>
 
-                            <form method="post">
+                            <!-- <form method="post">
                                 <input type="hidden" value="<?php echo $item['item_id'] ?? 0; ?>" name="item_id">
                                 <button type="submit" name="wishlist-submit" class="btn font-baloo text-danger">Save for Later</button>
-                            </form>
+                            </form> -->
 
 
                         </div>
