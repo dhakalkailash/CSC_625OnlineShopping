@@ -17,12 +17,18 @@ $result = mysqli_query($con,$s);
 
 $num = mysqli_num_rows($result);
 
-if($num ==1){
-    $_SESSION['userName'] = $name;
-   header('location:../index.php');
+if($num ==1 && $user == "admin"){   
+    $_SESSION['userName'] = $user; 
+    
+    header('location:../admin.php');          
+    
+    }elseif($num == 1 && $user != "admin"){
+        $_SESSION['userName']= $user;
+        header('location:../index.php');
+    }
+    else{
+        header('location:login.php');
 
-}else{
-    header('location:login.php');
    
 }
 ?>

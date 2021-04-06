@@ -20,11 +20,12 @@
                         <label class="lawngreen-text" style="color:lawngreen";> Password</label>
                         <input type="password" name="password" class="form-control" required>
                     </div>
+                    
                     <button type="submit" class="btn btn-primary"> Login </button>
                 </form>     
             </div>
 
- <!-- this is for the login page -->
+ <!-- this is for the login  -->
             <div class="col-md-6 login-right">
                <h2 class="aqua-text" style="color:aqua";> Register Here </h2>
                <form action="registration.php" method="POST">

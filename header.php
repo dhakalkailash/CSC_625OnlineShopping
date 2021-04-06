@@ -1,4 +1,5 @@
 <?php
+  session_start();
     // require functions.php file
     require ('functions.php');
     ?>
@@ -30,7 +31,7 @@
             <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
                 <p class="font-rale font-size-12 text-black-50 m-0">One University Palace, Shreveport, Louisiana 71115  (318) 930-5255</p>
                 <div class="font-rale font-size-14">
-                    <a href="#" class="px-3 border-right border-left text-dark">Login</a>                    
+                <a href="#" class="px-3 border-right border-left text-dark"> <?php echo $_SESSION['userName']?></a>                    
                 </div>
             </div>
 
