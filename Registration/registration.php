@@ -19,7 +19,8 @@ $result = mysqli_query($con,$s);
 $num = mysqli_num_rows($result);
 
 if($num ==1){
-    echo"User Name is Already in Selected";
+   
+    echo '<script> alert ("User Name is Already Selected, Try Another !!")</script>';
 
 }else{
     $reg = "insert into users(firstName,lastName,userName,phone,password) values('$first', '$last', '$user', '$phone', '$pass')";

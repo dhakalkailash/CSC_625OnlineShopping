@@ -20,7 +20,7 @@ $num = mysqli_num_rows($result);
 if($num ==1 && $user == "admin"){   
     $_SESSION['userName'] = $user; 
     
-    header('location:../admin.php');          
+    header('location:admin.php');          
     
     }elseif($num == 1 && $user != "admin"){
         $_SESSION['userName']= $user;

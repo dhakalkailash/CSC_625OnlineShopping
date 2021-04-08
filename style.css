@@ -2,31 +2,6 @@
 /*              Sass Template           */
 /*  global classes  */
 
-body{
-
-  background: linear-gradient(rgba(0,0,50,0.5),rgba(0,0,50,0.5)),url(/Registration/online-shopping.jpg);
-  background-size:cover;
-  background-position: center;
-}
-
-.login-box{
-  max-width:700px;
-  float:none;
-  margin: 150px auto;
-}
-.login-left{
-  background: rgba(211,211,211,0.5);
-  padding: 30px;
-}
-.login-right{
-  background-color: #ffff;
-  padding: 30px;
-}
-.form-control{
-  background-color: transparent !important;
-}
-
-
 button, button:focus {
   outline: none !important;
   box-shadow: none !important;
@@ -94,6 +69,7 @@ button, button:focus {
 .container button:hover{
   background: yellow;
   background-color: transparent;
+
 }
 
 /*  top sale template   */

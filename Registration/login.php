@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <head>
     <title>User Login and Registeration</title>
@@ -60,3 +62,7 @@
 
 
 </body>
+<?php
+// include footer.php file
+include ('../footer.php');
+?>
