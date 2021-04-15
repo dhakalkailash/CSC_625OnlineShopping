@@ -1,13 +1,8 @@
 <?php
-// include footer.php file
-include ('../header.php');
-?>
-
-<?php
 
 $con = mysqli_connect('localhost', 'root','', 'online_shopping','3307');
 
-if (isset($_POST["insert_btn"]))
+if (isset($_POST["register_btn"]))
 {
     $sql = "CALL insertUserData('".$_POST["first"]."', '".$_POST["last"]."','".$_POST["user"]."','".$_POST["phone"]."','".$_POST["password"]."')";
     if(mysqli_query($con, $sql))
@@ -22,11 +17,9 @@ if(isset($_GET["inserted"]))
 
 
 
-// $con = mysqli_connect('localhost', 'root','', 'online_shopping','3307');
-
 if (isset($_POST["insert_btn"]))
 {
-    $sql = "CALL insertInventoryData('".$_POST["product_id"]."', '".$_POST["item_brand"]."','".$_POST["item_name"]."','".$_POST["item_image"]."','".$_POST["time"]."')";
+    $sql = "CALL insertInventory('".$_POST["product_id"]."', '".$_POST["item_brand"]."','".$_POST["item_name"]."','".$_POST["item_price"]."','".$_POST["item_image"]."','".$_POST["time"]."')";
     if(mysqli_query($con, $sql))
     {
         header("location:admin.php?inserted=1");
@@ -78,7 +71,7 @@ if(isset($_GET["inserted"]))
                         <label class="lawngreen-text" style="color:lawngreen";> Password</label>
                         <input type="password" name="password" class="form-control" required>
                     </div>
-                    <button type="submit" name="insert_btn" class="btn btn-primary"> Register </button>
+                    <button type="submit" name="register_btn" class="btn btn-primary"> Register </button>
                 </form>    
             </div>         
 
@@ -97,6 +90,10 @@ if(isset($_GET["inserted"]))
                     <div class="form-group">
                     <label class="lawngreen-text" style="color:black";> Item Name</label>
                         <input type="text" name="item_name" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                    <label class="lawngreen-text" style="color:black";> Item Price</label>
+                        <input type="number" name="item_price" class="form-control" required>
                     </div>
                     <div class="form-group">
                     <label class="lawngreen-text" style="color:black";> Item Image (give proper Path)</label>

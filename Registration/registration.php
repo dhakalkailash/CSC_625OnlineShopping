@@ -12,7 +12,7 @@ $user = $_POST['user'];
 $phone = $_POST['phone'];
 $pass = $_POST['password'];
 
-$s = "select * from users where UserName = '$user'";
+$s = "select * from user where UserName = '$user'";
 
 $result = mysqli_query($con,$s);
 

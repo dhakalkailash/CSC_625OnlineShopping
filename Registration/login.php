@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <head>
     <title>User Login and Registeration</title>

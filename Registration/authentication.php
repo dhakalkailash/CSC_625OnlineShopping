@@ -11,7 +11,7 @@ $user = $_POST['user'];
 $phone = $_POST['phone'];
 $pass = $_POST['password'];
 
-$s = "select * from users where UserName = '$user' && password = '$pass'";
+$s = "select * from user where UserName = '$user' && password = '$pass'";
 
 $result = mysqli_query($con,$s);
 
