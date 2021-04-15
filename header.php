@@ -44,7 +44,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                   <ul class="navbar-nav m-auto font-rubik">
                     <li class="nav-item active">
-                      <a class="nav-link" href="index.php">Home</a>
+                      <a class="nav-link" href="home.php">Home</a>
                     </li>
                     <li class="nav-item active">
                       <a class="nav-link" href="Product.php">Product Details</a>

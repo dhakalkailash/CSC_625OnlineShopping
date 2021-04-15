@@ -1,7 +1,7 @@
 <?php
 
 session_start();
-header('location:login.php');
+header('location:index.php');
 
 $con = mysqli_connect('localhost', 'root','', 'online_shopping','3307');
 

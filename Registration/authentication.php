@@ -24,10 +24,10 @@ if($num ==1 && $user == "admin"){
     
     }elseif($num == 1 && $user != "admin"){
         $_SESSION['userName']= $user;
-        header('location:../index.php');
+        header('location:../home.php');
     }
     else{
-        header('location:login.php');
+        header('location:index.php');
 
    
 }
